@@ -11,7 +11,7 @@ export type SearchTab = "Stays" | "Experiences" | "Cars" | "Flights";
 export interface HeroSearchFormProps {
   className?: string;
   currentTab?: SearchTab;
-  currentPage?: "Stays" | "Experiences" | "Cars" | "Flights";
+  currentPage?: "Stays" | "Experiences";
 }
 
 const HeroSearchForm: FC<HeroSearchFormProps> = ({
@@ -19,7 +19,7 @@ const HeroSearchForm: FC<HeroSearchFormProps> = ({
   currentTab = "Stays",
   currentPage,
 }) => {
-  const tabs: SearchTab[] = ["Stays", "Experiences", "Cars", "Flights"];
+  const tabs: SearchTab[] = ["Stays", "Experiences"];
   const [tabActive, setTabActive] = useState<SearchTab>(currentTab);
 
   const renderTab = () => {
@@ -54,10 +54,6 @@ const HeroSearchForm: FC<HeroSearchFormProps> = ({
         return <StaySearchForm />;
       case "Experiences":
         return <ExperiencesSearchForm />;
-      case "Cars":
-        return <RentalCarSearchForm />;
-      case "Flights":
-        return <FlightSearchForm />;
 
       default:
         return null;
