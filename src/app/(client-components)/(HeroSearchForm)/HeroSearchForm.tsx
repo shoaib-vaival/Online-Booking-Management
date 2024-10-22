@@ -11,7 +11,7 @@ export type SearchTab = "Stays" | "Experiences" | "Cars" | "Flights";
 export interface HeroSearchFormProps {
   className?: string;
   currentTab?: SearchTab;
-  currentPage?: "Stays" | "Experiences";
+  currentPage?: "Stays" | "Experiences" | "Cars" | "Flights";
 }
 
 const HeroSearchForm: FC<HeroSearchFormProps> = ({
@@ -54,6 +54,10 @@ const HeroSearchForm: FC<HeroSearchFormProps> = ({
         return <StaySearchForm />;
       case "Experiences":
         return <ExperiencesSearchForm />;
+      case "Cars":
+        return <RentalCarSearchForm />;
+      case "Flights":
+        return <FlightSearchForm />;
 
       default:
         return null;
