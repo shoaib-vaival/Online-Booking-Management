@@ -14,7 +14,7 @@ interface Props {
 const LocationInput: FC<Props> = ({
   onChange = () => {},
   className = "",
-  defaultValue = "United States",
+  defaultValue = "Tokyo",
   headingText = "Where to?",
 }) => {
   const [value, setValue] = useState("");
@@ -86,21 +86,13 @@ const LocationInput: FC<Props> = ({
             ? renderSearchValues({
                 heading: "Locations",
                 items: [
-                  "Afghanistan",
-                  "Albania",
-                  "Algeria",
-                  "American Samao",
-                  "Andorra",
+                  "Tokyo"
                 ],
               })
             : renderSearchValues({
                 heading: "Popular destinations",
                 items: [
-                  "Australia",
-                  "Canada",
-                  "Germany",
-                  "United Kingdom",
-                  "United Arab Emirates",
+                  "Tokyo"
                 ],
               })}
         </div>
