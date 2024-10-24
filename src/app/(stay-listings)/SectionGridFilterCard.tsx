@@ -33,7 +33,6 @@ const SectionGridFilterCard: FC<SectionGridFilterCardProps> = ({
         ))}
       </div>
       <div className="flex mt-16 justify-center items-center">
-        <Pagination />
       </div>
     </div>
   );
