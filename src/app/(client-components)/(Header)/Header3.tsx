@@ -25,20 +25,16 @@ if (typeof window !== "undefined") {
 
 const Header3: FC<Header3Props> = ({ className = "" }) => {
   const headerInnerRef = useRef<HTMLDivElement>(null);
-  //
   const [showHeroSearch, setShowHeroSearch] =
     useState<StaySearchFormFields | null>();
-  //
   const [currentTab, setCurrentTab] = useState<SearchTab>("Stays");
 
-  //
   useOutsideAlerter(headerInnerRef, () => {
     setShowHeroSearch(null);
     setCurrentTab("Stays");
   });
 
   let pathname = usePathname();
-  //
 
   useEffect(() => {
     setShowHeroSearch(null);
@@ -61,7 +57,6 @@ const Header3: FC<Header3Props> = ({ className = "" }) => {
     if (!document.querySelector("#nc-Header-3-anchor")) {
       return;
     }
-    //
     let currentScrollPos = window.pageYOffset;
     if (
       WIN_PREV_POSITION - currentScrollPos > 100 ||
@@ -74,7 +69,6 @@ const Header3: FC<Header3Props> = ({ className = "" }) => {
     WIN_PREV_POSITION = currentScrollPos;
   };
 
-  //
   const renderHeroSearch = () => {
     return (
       <div

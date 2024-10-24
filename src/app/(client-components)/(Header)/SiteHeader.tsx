@@ -1,10 +1,6 @@
 "use client";
 
 import React, { Fragment, useEffect, useRef, useState } from "react";
-import {
-  ShoppingBagIcon as ShoppingCartIcon,
-  Cog8ToothIcon as CogIcon,
-} from "@heroicons/react/24/outline";
 import { Popover, Transition } from "@headlessui/react";
 import { PathName } from "@/routers/types";
 import Link from "next/link";

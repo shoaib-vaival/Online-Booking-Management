@@ -28,9 +28,9 @@ const SectionGridHasMap: FC<SectionGridHasMapProps> = () => {
             heading="Cars in Tokyo"
             subHeading={
               <span className="block text-neutral-500 dark:text-neutral-400 mt-3">
-                233 cars
+                12 cars
                 <span className="mx-2">·</span>
-                Aug 12 - 18
+                Oct 24 - 30
               </span>
             }
           />
@@ -47,9 +47,6 @@ const SectionGridHasMap: FC<SectionGridHasMapProps> = () => {
                 <CarCardH data={item} />
               </div>
             ))}
-          </div>
-          <div className="flex mt-16 justify-center items-center">
-            <Pagination />
           </div>
         </div>
 

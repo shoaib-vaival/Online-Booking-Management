@@ -23,9 +23,9 @@ const SectionGridFilterCard: FC<SectionGridFilterCardProps> = ({
         heading="Cars in Tokyo"
         subHeading={
           <span className="block text-neutral-500 dark:text-neutral-400 mt-3">
-            233 cars
+            12 cars
             <span className="mx-2">·</span>
-            Aug 12 - 18
+            Oct 24 - 30
           </span>
         }
       />
@@ -37,9 +37,6 @@ const SectionGridFilterCard: FC<SectionGridFilterCardProps> = ({
         {data.map((car) => (
           <CarCard key={car.id} data={car} />
         ))}
-      </div>
-      <div className="flex mt-16 justify-center items-center">
-        <Pagination />
       </div>
     </div>
   );

@@ -23,9 +23,9 @@ const FlightDateRangeInput: FC<FlightDateRangeInputProps> = ({
   selectsRange = true,
 }) => {
   const [startDate, setStartDate] = useState<Date | null>(
-    new Date("2023/05/01")
+    new Date()
   );
-  const [endDate, setEndDate] = useState<Date | null>(new Date("2023/05/16"));
+  const [endDate, setEndDate] = useState<Date | null>(null);
 
   const onChangeRangeDate = (dates: [Date | null, Date | null]) => {
     const [start, end] = dates;

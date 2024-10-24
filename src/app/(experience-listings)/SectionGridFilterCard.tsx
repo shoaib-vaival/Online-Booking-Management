@@ -25,9 +25,9 @@ const SectionGridFilterCard: FC<SectionGridFilterCardProps> = ({
         heading="Experiences in Tokyo"
         subHeading={
           <span className="block text-neutral-500 dark:text-neutral-400 mt-3">
-            233 experiences
+            8 experiences
             <span className="mx-2">·</span>
-            Aug 12 - 18
+            Oct 24 - 30
             <span className="mx-2">·</span>2 Guests
           </span>
         }

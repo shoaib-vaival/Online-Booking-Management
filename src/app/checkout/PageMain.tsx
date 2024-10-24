@@ -25,9 +25,9 @@ const CheckOutPagePageMain: FC<CheckOutPagePageMainProps> = ({
   className = "",
 }) => {
   const [startDate, setStartDate] = useState<Date | null>(
-    new Date("2023/02/06")
+    new Date()
   );
-  const [endDate, setEndDate] = useState<Date | null>(new Date("2023/02/23"));
+  const [endDate, setEndDate] = useState<Date | null>(new Date());
 
   const [guests, setGuests] = useState<GuestsObject>({
     guestAdults: 2,

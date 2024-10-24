@@ -65,7 +65,7 @@ const PayPage: FC<PayPageProps> = () => {
               <div className="flex flex-col">
                 <span className="text-sm text-neutral-400">Date</span>
                 <span className="mt-1.5 text-lg font-semibold">
-                  Aug 12 - 16, 2021
+                  Oct 24 - 30, 2024
                 </span>
               </div>
             </div>
@@ -106,7 +106,7 @@ const PayPage: FC<PayPageProps> = () => {
             <div className="flex text-neutral-6000 dark:text-neutral-300">
               <span className="flex-1">Date</span>
               <span className="flex-1 font-medium text-neutral-900 dark:text-neutral-100">
-                12 Aug, 2021
+                24 Oct, 2024
               </span>
             </div>
             <div className="flex text-neutral-6000 dark:text-neutral-300">
